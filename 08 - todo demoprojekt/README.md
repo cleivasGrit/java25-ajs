@@ -17,27 +17,28 @@ npm start
 Här är en överblick över filstrukturen.
 Högst upp i varje ts-fil finns en kommentar som förklarar vad filen innehåller. 
 
+```text
 root/
 ├── package.json
 ├── tsconfig.json
 ├── .gitignore
-├── app.db                          # SQLite-databasen
-├── dist/                           # Transpilerad JavaScript (build-output)
-├── public/                         # Frontend-filer (HTML, klient-JS)
-├── src/                            # Källkod (TypeScript)
-│   ├── app.ts           
-│   ├── server.ts
-│   ├── database/                   # All logik för att hantera databasen
-│   │   ├── database.controller.ts
-│   │   ├── database.statements.ts
-│   │   └── database.config.ts
-│   ├── models/                     # Alla TS typer samt valideringar för requests
-│   │   ├── todos.types.ts
-│   │   └── todos.validation.ts
-│   └── routes/                     # Routes för TODO API och klientappen samt dess request handlers
-│       ├── page.route.ts
-│       └── todo.route.ts
-
+├── app.db
+├── dist/                # Transpilerad JavaScript (build-output)
+├── public/              # Frontend-filer
+└── src/                 # Källkod i TypeScript
+    ├── app.ts
+    ├── server.ts
+    ├── database/
+    │   ├── database.controller.ts
+    │   ├── database.statements.ts
+    │   └── database.config.ts
+    ├── models/
+    │   ├── todos.types.ts
+    │   └── todos.validation.ts
+    └── routes/
+        ├── page.route.ts
+        └── todo.route.ts
+```
 ## Bibliotek som används
-[Express](https://expressjs.com/en/)
-[Express-validator](https://express-validator.github.io/docs/)
+-[Express](https://expressjs.com/en/)
+-[Express-validator](https://express-validator.github.io/docs/)
